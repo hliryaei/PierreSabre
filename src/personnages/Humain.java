@@ -31,11 +31,11 @@ public class Humain {
             parler("Je n'ai pas assez d'argent pour m'offrir un(e) " + bien + ".");
         }
     }
-	public void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
         argent += gain;
     }
 
-    public void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
         argent -= perte;
     }
 
