@@ -29,13 +29,26 @@ public class HistoireTP4 {
         yakuLeNoir.direBonjour();
         yakuLeNoir.extorquer(marco);
     }*/
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
         Commercant marco = new Commercant("Marco", 20);
         Ronin roro = new Ronin("Roro", "shochu", 60);
 
         roro.direBonjour();
         roro.donner(marco);
         marco.boire(); // Pour voir le commerçant boire après avoir reçu de l'argent
+    }*/
+	
+	public static void main(String[] args) {
+        
+        Commercant marco = new Commercant("Marco", 20);
+        Ronin roro = new Ronin("Roro", "shochu", 60);
+        Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
+
+        
+        roro.provoquer(yakuLeNoir);
+
+        //yakuLeNoir.setReputation(4); 
+        // roro.provoquer(yakuLeNoir); 
     }
 	
 }
